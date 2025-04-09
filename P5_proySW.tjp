@@ -1,10 +1,4 @@
 /*
- * This file contains the practice 5 source code corresponding with the 
- * project planification using TaskJuggler in the "Proyecto Software" course.
- * It is based on the Tutorial project offered by TaskJuggler and maintains 
- * some elements of it
- */
-/*
  * Modified file for Práctica 5 - Proyecto Software: Web Game
  */
 
@@ -51,11 +45,9 @@ resource dev2 "Samantha Müller" {
 resource dev3 "Peter Green" {
   email "kkk@unizar.es"
 }
-// Nuevo recurso: representación personal con dedicación de 4 horas diarias.
-// Se utiliza "maxunits 0.5" para indicar que el recurso está disponible a la mitad de la jornada completa.
+// Recurso "me" definido sin restricciones especiales (se asume disponibilidad completa).
 resource me "Mi Nombre" {
   rate 145.2
-  maxunits 0.5
 }
 
 task WMGame "Web & Mobile Game" {
