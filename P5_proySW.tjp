@@ -8,6 +8,10 @@
  * Modified file for Práctica 5 - Proyecto Software: Web Game
  */
 
+/*
+ * Modified file for Práctica 5 - Proyecto Software: Web Game
+ */
+
 project pSix "Web Game" 2024-12-15 +5m {
   timezone "Europe/Paris"
   timeformat "%Y-%m-%d"
@@ -51,10 +55,10 @@ resource dev2 "Samantha Müller" {
 resource dev3 "Peter Green" {
   email "kkk@unizar.es"
 }
-// Nuevo recurso: representación personal con dedicación de 4 horas diarias (50% de jornada)
+// Nuevo recurso: representación personal con dedicación de 4 horas diarias
 resource me "Mi Nombre" {
   rate 145.2
-  availability 0.5
+  workinghours 4h
 }
 
 task WMGame "Web & Mobile Game" {
@@ -357,3 +361,4 @@ resourcereport resourceGraph "" {
   hidetask ~(isleaf() & isleaf_())
   sorttasks plan.start.up
 }
+
