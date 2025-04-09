@@ -4,13 +4,7 @@
  * It is based on the Tutorial project offered by TaskJuggler and maintains 
  * some elements of it
  */
-/*
- * Modified file for Práctica 5 - Proyecto Software: Web Game
- */
 
-/*
- * Modified file for Práctica 5 - Proyecto Software: Web Game
- */
 
 project pSix "Web Game" 2024-12-15 +5m {
   timezone "Europe/Paris"
@@ -55,10 +49,10 @@ resource dev2 "Samantha Müller" {
 resource dev3 "Peter Green" {
   email "kkk@unizar.es"
 }
-// Nuevo recurso: representación personal con dedicación de 4 horas diarias
+// Nuevo recurso: representación personal con dedicación de 4 horas diarias (de lunes a viernes)
 resource me "Mi Nombre" {
   rate 145.2
-  workinghours 4h
+  workinghours mon..fri 4h
 }
 
 task WMGame "Web & Mobile Game" {
@@ -361,4 +355,5 @@ resourcereport resourceGraph "" {
   hidetask ~(isleaf() & isleaf_())
   sorttasks plan.start.up
 }
+
 
