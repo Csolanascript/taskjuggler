@@ -1,10 +1,4 @@
 /*
- * This file contains the practice 5 source code corresponding with the 
- * project planification using TaskJuggler in the "Proyecto Software" course.
- * It is based on the Tutorial project offered by TaskJuggler and maintains 
- * some elements of it
- */
-/*
  * Modified file for Práctica 5 - Proyecto Software: Web Game
  */
 
@@ -51,14 +45,16 @@ resource dev2 "Samantha Müller" {
 resource dev3 "Peter Green" {
   email "kkk@unizar.es"
 }
-// Nuevo recurso: representación personal con dedicación de 4 horas diarias (de lunes a viernes)
+// Nuevo recurso: representación personal con dedicación de 4 horas diarias (lunes a viernes)
 resource me "Mi Nombre" {
   rate 145.2
-  workinghours mon 4h
-  workinghours tue 4h
-  workinghours wed 4h
-  workinghours thu 4h
-  workinghours fri 4h
+  workinghours {
+    mon 09:00-13:00;
+    tue 09:00-13:00;
+    wed 09:00-13:00;
+    thu 09:00-13:00;
+    fri 09:00-13:00;
+  }
 }
 
 task WMGame "Web & Mobile Game" {
