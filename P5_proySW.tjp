@@ -1,4 +1,10 @@
 /*
+ * This file contains the practice 5 source code corresponding with the 
+ * project planification using TaskJuggler in the "Proyecto Software" course.
+ * It is based on the Tutorial project offered by TaskJuggler and maintains 
+ * some elements of it
+ */
+/*
  * Modified file for Práctica 5 - Proyecto Software: Web Game
  */
 
@@ -45,16 +51,11 @@ resource dev2 "Samantha Müller" {
 resource dev3 "Peter Green" {
   email "kkk@unizar.es"
 }
-// Nuevo recurso: representación personal con dedicación de 4 horas diarias (lunes a viernes)
+// Nuevo recurso: representación personal con dedicación de 4 horas diarias.
+// Se utiliza "maxunits 0.5" para indicar que el recurso está disponible a la mitad de la jornada completa.
 resource me "Mi Nombre" {
   rate 145.2
-  workinghours {
-    mon 09:00-13:00;
-    tue 09:00-13:00;
-    wed 09:00-13:00;
-    thu 09:00-13:00;
-    fri 09:00-13:00;
-  }
+  maxunits 0.5
 }
 
 task WMGame "Web & Mobile Game" {
@@ -354,6 +355,6 @@ resourcereport resourceGraph "" {
   headline "Current Resource Allocation Graph"
   columns no, name, effort, rate, weekly { ${TaskTip} }
   loadunit shortauto
-  hidetask ~(isleaf() & isleaf_())
+  hideresource ~(isleaf() & isleaf_())
   sorttasks plan.start.up
 }
