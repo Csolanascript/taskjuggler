@@ -1,8 +1,12 @@
 /*
- * Modified file for Práctica 5 - Proyecto Software: Web Game
+ * This file contains the practice 5 source code corresponding with the 
+ * project planification using TaskJuggler in the "Proyecto Software" course.
+ * It is based on the Tutorial project offered by TaskJuggler and maintains 
+ * some elements of it
  */
 
-project pSix "Web Game" 2024-12-15 +5m {
+
+project pSix "Web Game" 2024-12-15 +6m {
   timezone "Europe/Paris"
   timeformat "%Y-%m-%d"
   numberformat "-" "" "." "," 2
@@ -45,7 +49,7 @@ resource dev2 "Samantha Müller" {
 resource dev3 "Peter Green" {
   email "kkk@unizar.es"
 }
-// Recurso "me" definido sin restricciones especiales (se asume disponibilidad completa).
+// Recurso "me" definido sin restricciones especiales.
 resource me "Mi Nombre" {
   rate 145.2
 }
